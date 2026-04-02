@@ -28,22 +28,28 @@
     <header id="header">
         <div class="header-inner">
 
+            <div class="lang-switcher">
+                <button id="langToggle" class="btn-lang" aria-label="Cambiar idioma">
+                    <span class="active">ES</span> | <span>EN</span>
+                </button>
+            </div>
+
             <a href="#inicio" class="logo-link">
                 <img src="logo.png" alt="ARCA LEGAL" class="logo-img">
             </a>
 
             <nav>
                 <ul class="nav-list">
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#nosotros">QUIÉNES SOMOS</a></li>
-                    <li><a href="#servicios">ÁREAS DE PRÁCTICA</a></li>
-                    <li><a href="#equipo">EQUIPO</a></li>
-                    <li><a href="#testimonios">TESTIMONIOS</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#inicio" data-i18n="nav_inicio">INICIO</a></li>
+                    <li><a href="#nosotros" data-i18n="nav_nosotros">QUIÉNES SOMOS</a></li>
+                    <li><a href="#servicios" data-i18n="nav_servicios">ÁREAS DE PRÁCTICA</a></li>
+                    <li><a href="#equipo" data-i18n="nav_equipo">EQUIPO</a></li>
+                    <li><a href="#testimonios" data-i18n="nav_testimonios">TESTIMONIOS</a></li>
+                    <li><a href="#contacto" data-i18n="nav_contacto">CONTACTO</a></li>
                 </ul>
             </nav>
 
-            <a href="#contacto" class="btn-consulta">CONSULTA</a>
+            <a href="#contacto" class="btn-consulta" data-i18n="btn_consulta">CONSULTA</a>
 
             <button class="mobile-toggle" id="mobileToggle" aria-label="Menú">
                 <span></span><span></span><span></span>
@@ -69,7 +75,6 @@
 ════════════════════════════════════════ -->
         <section id="inicio" class="hero">
             <div class="hero-content">
-                <!-- Scales SVG icon -->
                 <div class="hero-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
@@ -80,7 +85,7 @@
                     </svg>
                 </div>
 
-                <h1 class="hero-title">Escogernos es la primera decisión<br>hacia el éxito</h1>
+                <h1 class="hero-title" data-i18n="hero_title">Escogernos es la primera decisión<br>hacia el éxito</h1>
 
                 <div class="hero-ornament">
                     <span class="ornament-line"></span>
@@ -88,12 +93,12 @@
                     <span class="ornament-line"></span>
                 </div>
 
-                <p class="hero-subtitle"><em>La realidad jurídica es casuística, su resultado parte de su
+                <p class="hero-subtitle" data-i18n="hero_subtitle"><em>La realidad jurídica es casuística, su resultado parte de su
                         comprensión</em></p>
 
                 <div class="hero-buttons">
-                    <a href="#servicios" class="btn btn-outline">NUESTROS SERVICIOS</a>
-                    <a href="#contacto" class="btn btn-gold">CONTACTAR AHORA</a>
+                    <a href="#servicios" class="btn btn-outline" data-i18n="btn_servicios">NUESTROS SERVICIOS</a>
+                    <a href="#contacto" class="btn btn-gold" data-i18n="btn_contactar">CONTACTAR AHORA</a>
                 </div>
             </div>
         </section>
@@ -102,19 +107,19 @@
             <div class="stats-inner">
                 <div class="stat">
                     <div class="stat-num">15+</div>
-                    <div class="stat-label">Años de Experiencia</div>
+                    <div class="stat-label" data-i18n="stat_exp">Años de Experiencia</div>
                 </div>
                 <div class="stat">
                     <div class="stat-num">+200</div>
-                    <div class="stat-label">Casos Ganados</div>
+                    <div class="stat-label" data-i18n="stat_cases">Casos Ganados</div>
                 </div>
                 <div class="stat">
                     <div class="stat-num">250+</div>
-                    <div class="stat-label">Clientes Satisfechos</div>
+                    <div class="stat-label" data-i18n="stat_clients">Clientes Satisfechos</div>
                 </div>
                 <div class="stat">
                     <div class="stat-num">24/7</div>
-                    <div class="stat-label">Atención Disponible</div>
+                    <div class="stat-label" data-i18n="stat_avail">Atención Disponible</div>
                 </div>
             </div>
         </section>
@@ -128,17 +133,17 @@
 
                     <!-- Left: Text -->
                     <div class="about-text">
-                        <span class="tag">QUIÉNES SOMOS</span>
-                        <h2 class="heading">EXPERIENCIA Y EXCELENCIA JURÍDICA</h2>
+                        <span class="tag" data-i18n="tag_about">QUIÉNES SOMOS</span>
+                        <h2 class="heading" data-i18n="about_heading">EXPERIENCIA Y EXCELENCIA JURÍDICA</h2>
                         <span class="gold-sep"></span>
 
-                        <p class="body-p">ARCA LEGAL es una firma de abogados de primer nivel con sede en la Ciudad de
-                            Panamá, fundada por el Licdo. Alejandro Arias Garcés. Con más de 15 años de trayectoria,
+                        <p class="body-p" data-i18n="about_p1">ARCA LEGAL es una firma de abogados de primer nivel con sede en la Ciudad de
+                            Panamá, fundada por el abogado Alejandro Arias Garcés. Con más de 15 años de trayectoria,
                             nuestro equipo combina experiencia en la Corte Suprema de Justicia, el Ministerio Público y
                             el sector gubernamental para ofrecer un servicio jurídico diligente y de alta calidad en
                             diversas ramas del derecho panameño.</p>
 
-                        <p class="body-p">Nuestra filosofía: <em>"Escogernos es la primera decisión hacia el
+                        <p class="body-p" data-i18n="about_p2">Nuestra filosofía: <em>"Escogernos es la primera decisión hacia el
                                 éxito."</em> Combinamos conocimiento jurídico profundo con estrategias innovadoras y un
                             trato personalizado que nos distingue en el mercado legal panameño.</p>
 
@@ -168,7 +173,7 @@
                             </div>
                         </div>
 
-                        <a href="#equipo" class="btn-outline-sm">CONOZCA NUESTRO EQUIPO</a>
+                        <a href="#equipo" class="btn-outline-sm" data-i18n="btn_team">CONOZCA NUESTRO EQUIPO</a>
                     </div>
 
                     <!-- Right: Libra Statue Image -->
@@ -186,8 +191,8 @@
         <section id="servicios" class="services-section-bg">
             <div class="section-wrap reveal">
                 <div style="text-align:center; margin-bottom:3rem;">
-                    <span class="tag">NUESTRAS ESPECIALIDADES</span>
-                    <h2 class="heading">ÁREAS DE PRÁCTICA</h2>
+                    <span class="tag" data-i18n="tag_specialties">NUESTRAS ESPECIALIDADES</span>
+                    <h2 class="heading" data-i18n="practice_heading">ÁREAS DE PRÁCTICA</h2>
                     <span class="gold-sep center"></span>
                 </div>
 
@@ -204,8 +209,8 @@
                                 <path d="M3.5 11.5L6 6M20.5 11.5L18 6" />
                             </svg>
                         </div>
-                        <h3 class="svc-title">DERECHO ADMINISTRATIVO</h3>
-                        <p class="svc-desc">Procesos contencioso-administrativos, asesoría gubernamental y defensa ante
+                        <h3 class="svc-title" data-i18n="svc_admin_title">DERECHO ADMINISTRATIVO</h3>
+                        <p class="svc-desc" data-i18n="svc_admin_desc">Procesos contencioso-administrativos, asesoría gubernamental y defensa ante
                             entidades del Estado.</p>
                     </div>
 
@@ -219,8 +224,8 @@
                                 <path d="M9 11l4 4" />
                             </svg>
                         </div>
-                        <h3 class="svc-title">DERECHO PENAL</h3>
-                        <p class="svc-desc">Defensa penal estratégica con abogado penalista especializado y ex Fiscal
+                        <h3 class="svc-title" data-i18n="svc_penal_title">DERECHO PENAL</h3>
+                        <p class="svc-desc" data-i18n="svc_penal_desc">Defensa penal estratégica con abogado penalista especializado y ex Fiscal
                             Anticorrupción.</p>
                     </div>
 
@@ -233,8 +238,8 @@
                                 <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
                             </svg>
                         </div>
-                        <h3 class="svc-title">DERECHO CORPORATIVO</h3>
-                        <p class="svc-desc">Constitución de sociedades y asesoría corporativa y especializada.</p>
+                        <h3 class="svc-title" data-i18n="svc_corp_title">DERECHO CORPORATIVO</h3>
+                        <p class="svc-desc" data-i18n="svc_corp_desc">Constitución de sociedades y asesoría corporativa y especializada.</p>
                     </div>
 
                     <div class="service-card">
@@ -242,31 +247,14 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
                                 stroke-linejoin="round">
-                                <path d="M3 21h18" />
-                                <path d="M9 8h6" />
-                                <path d="M10 21V10a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v11" />
-                                <path d="m2 14 10-10 10 10" />
-                                <path d="M7 21h10" />
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                             </svg>
                         </div>
-                        <h3 class="svc-title">DERECHO INMOBILIARIO</h3>
-                        <p class="svc-desc">Contrato de promesa de compraventa, compraventa, constitución de propiedad horizontal y tramitación registral.</p>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="svc-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                                <polyline points="14 2 14 8 20 8" />
-                                <line x1="16" y1="13" x2="8" y2="13" />
-                                <line x1="16" y1="17" x2="8" y2="17" />
-                            </svg>
-                        </div>
-                        <h3 class="svc-title">CONTRATACIÓN PÚBLICA</h3>
-                        <p class="svc-desc">Asesoría en licitaciones, contratos estatales y procedimientos de
-                            contratación gubernamental.</p>
+                        <h3 class="svc-title" data-i18n="svc_familia_title">DERECHO DE FAMILIA</h3>
+                        <p class="svc-desc" data-i18n="svc_familia_desc">Divorcios, guarda y crianza, pensiones alimenticias y procesos de familia en general.</p>
                     </div>
 
                     <div class="service-card">
@@ -278,9 +266,8 @@
                                 <polyline points="9 22 9 12 15 12 15 22" />
                             </svg>
                         </div>
-                        <h3 class="svc-title">DERECHO MIGRATORIO</h3>
-                        <p class="svc-desc">Trámites migratorios, permisos de residencia, visas y asesoría integral para
-                            extranjeros en Panamá.</p>
+                        <h3 class="svc-title" data-i18n="svc_inmob_title">DERECHO INMOBILIARIO</h3>
+                        <p class="svc-desc" data-i18n="svc_inmob_desc">Compraventa de propiedades, arrendamientos y gestión de trámites ante el Registro Público.</p>
                     </div>
 
                     <div class="service-card">
@@ -288,16 +275,13 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
                                 stroke-linejoin="round">
-                                <path d="M22 2L15 9" />
-                                <path d="M2 22l5-5" />
-                                <path d="M11 13l1.5-1.5" />
-                                <path d="m9 11 3 3L22 4l-2-2L9 11Z" />
-                                <path d="M8 12c-2.4 2.4-5 5.1-6 6l4 4 6-5-4-5Z" />
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="8.5" cy="7" r="4" />
+                                <polyline points="17 11 19 13 23 9" />
                             </svg>
                         </div>
-                        <h3 class="svc-title">DERECHO AGRARIO</h3>
-                        <p class="svc-desc">Procesos agrarios, titulación de tierras y resolución de conflictos sobre
-                            propiedad rural.</p>
+                        <h3 class="svc-title" data-i18n="svc_laboral_title">DERECHO LABORAL</h3>
+                        <p class="svc-desc" data-i18n="svc_laboral_desc">Asesoría en contratos, despidos, liquidaciones y representación ante el MITRADEL.</p>
                     </div>
 
                     <div class="service-card">
@@ -305,12 +289,13 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
                                 stroke-linejoin="round">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M2 12h20" />
+                                <path d="M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20" />
                             </svg>
                         </div>
-                        <h3 class="svc-title">MEDIACIÓN Y CONCILIACIÓN</h3>
-                        <p class="svc-desc">Resolución alternativa de conflictos con mediadores certificados e idóneos.</p>
+                        <h3 class="svc-title" data-i18n="svc_migra_title">DERECHO MIGRATORIO</h3>
+                        <p class="svc-desc" data-i18n="svc_migra_desc">Trámites de residencia, permisos de trabajo y visas para extranjeros en Panamá.</p>
                     </div>
 
                     <div class="service-card">
@@ -319,12 +304,22 @@
                                 fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
                                 stroke-linejoin="round">
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                                <path d="M12 8v4" />
-                                <path d="M12 16h.01" />
                             </svg>
                         </div>
-                        <h3 class="svc-title">PROTECCIÓN PATRIMONIAL</h3>
-                        <p class="svc-desc">Fundación de interés privado, planificación patrimonial, sucesiones directas y aseguramiento de bienes.</p>
+                        <h3 class="svc-title" data-i18n="svc_protec_title">PROTECCIÓN PATRIMONIAL</h3>
+                        <p class="svc-desc" data-i18n="svc_protec_desc">Fundaciones de Interés Privado y estructuras legales para salvaguardar sus activos.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="svc-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.5 5.5 0 0 0-7.65 7.65l1.06 1.06L12 21.23l7.36-7.94 1.06-1.06a5.4 5.4 0 0 0 0-7.65z" />
+                            </svg>
+                        </div>
+                        <h3 class="svc-title" data-i18n="svc_civil_title">DERECHO CIVIL</h3>
+                        <p class="svc-desc" data-i18n="svc_civil_desc">Contratos, sucesiones, demandas de daños y perjuicios y asesoría civil integral.</p>
                     </div>
 
                 </div>
@@ -335,8 +330,8 @@
         <section id="equipo">
             <div class="section-wrap">
                 <div style="text-align:center;">
-                    <span class="tag">LIDERAZGO</span>
-                    <h2 class="heading">NUESTRO EQUIPO LEGAL</h2>
+                    <span class="tag" data-i18n="tag_leadership">LIDERAZGO</span>
+                    <h2 class="heading" data-i18n="team_heading">NUESTRO EQUIPO LEGAL</h2>
                     <span class="gold-sep center"></span>
                     <p class="team-intro-quote">"Escogernos es la primera decisión hacia el éxito"</p>
                 </div>
@@ -348,28 +343,28 @@
                     </div>
                     <div class="member-info">
                         <h3 class="member-name">ALEJANDRO ALBERTO ARIAS GARCÉS</h3>
-                        <span class="member-role">Socio Fundador &amp; Director</span>
+                        <span class="member-role" data-i18n="role_founder">Socio Fundador &amp; Director</span>
                         <span class="sep-sm"></span>
-                        <p class="body-p">Abogado graduado de la Universidad de Panamá (2007), con posgrado y maestría en
+                        <p class="body-p" data-i18n="bio_alejandro_1">Abogado graduado de la Universidad de Panamá (2007), con posgrado y maestría en
                             Derecho Administrativo (Universidad Latina de Panamá, 2012) y posgrado en Docencia Superior
                             (UDELAS, 2020). Cuenta con más de 15 años de experiencia, incluyendo 12 años en la Sala
                             Tercera de lo Contencioso Administrativo de la Corte Suprema de Justicia (2008-2020) y 3 años
                             como Jefe de Asesoría Legal en la Lotería Nacional de Beneficencia (2021-2024).</p>
-                        <p class="body-p">Actualmente ejerce en práctica privada selectiva, con enfoque en derecho
+                        <p class="body-p" data-i18n="bio_alejandro_2">Actualmente ejerce en práctica privada selectiva, con enfoque en derecho
                             administrativo, corporativo y litigios. Participó en la Revista Cultural Lotería 545-546,
                             Edición Especial (80 Años de Jurisdicción Contencioso-Administrativa, 2024).</p>
                         <div class="member-credentials">
                             <div>
-                                <span class="cred-label">FORMACIÓN</span>
+                                <span class="cred-label" data-i18n="label_education">FORMACIÓN</span>
                                 <ul class="cred-list">
-                                    <li>Postgrado en Docencia Superior — UDELAS (2020)</li>
-                                    <li>Postgrado y Maestría en Derecho Administrativo — Universidad Latina (2012)</li>
-                                    <li>Licenciatura en Derecho y Ciencias Políticas — Universidad de Panamá (2007)</li>
-                                    <li>Idiomas: Español e Inglés</li>
+                                    <li data-i18n="edu_ale_1">Postgrado en Docencia Superior — UDELAS (2020)</li>
+                                    <li data-i18n="edu_ale_2">Postgrado y Maestría en Derecho Administrativo — Universidad Latina (2012)</li>
+                                    <li data-i18n="edu_ale_3">Licenciatura en Derecho y Ciencias Políticas — Universidad de Panamá (2007)</li>
+                                    <li data-i18n="label_languages">Idiomas: Español e Inglés</li>
                                 </ul>
                             </div>
                             <div>
-                                <span class="cred-label">ESPECIALIDADES</span>
+                                <span class="cred-label" data-i18n="label_specialties">ESPECIALIDADES</span>
                                 <div class="tags">
                                     <span>Administrativo</span><span>Corporativo</span><span>Contratación Pública</span>
                                     <span>Civil</span><span>Migración</span><span>Litigios</span>
@@ -386,26 +381,26 @@
                     </div>
                     <div class="member-info">
                         <h3 class="member-name">DEYSI ARCIA BATISTA</h3>
-                        <span class="member-role">Socia</span>
+                        <span class="member-role" data-i18n="role_partner">Socia Fundadora</span>
                         <span class="sep-sm"></span>
-                        <p class="body-p">Abogada con más de 30 años de experiencia en el sector gubernamental. Especialista
+                        <p class="body-p" data-i18n="bio_deysi">Abogada con más de 30 años de experiencia en el sector gubernamental. Especialista
                             en Derecho Administrativo, Migratorio, Agrario, Derecho Comercial/Corporativo y Contratación
                             Pública. Cuenta con diplomados en Regulación del Sistema Bancario panameño y en Mediación y
                             Conciliación (idoneidad, 2024). Participó en la Revista Cultural Lotería 545-546, Edición
                             Especial (80 Años de Jurisdicción Contencioso-Administrativa, 2024).</p>
                         <div class="member-credentials">
                             <div>
-                                <span class="cred-label">FORMACIÓN</span>
+                                <span class="cred-label" data-i18n="label_education">FORMACIÓN</span>
                                 <ul class="cred-list">
-                                    <li>Maestría en Docencia Superior — En curso</li>
-                                    <li>Licenciatura en Derecho — Universidad Columbus</li>
-                                    <li>Licenciatura en Contabilidad — Univ. Nacional de Panamá</li>
-                                    <li>Diplomado en Regulación del Sistema Bancario</li>
-                                    <li>Diplomado en Mediación y Conciliación (Idoneidad, 2024)</li>
+                                    <li data-i18n="edu_dey_1">Maestría en Docencia Superior — En curso</li>
+                                    <li data-i18n="edu_dey_2">Licenciatura en Derecho — Universidad Columbus</li>
+                                    <li data-i18n="edu_dey_3">Licenciatura en Contabilidad — Univ. Nacional de Panamá</li>
+                                    <li data-i18n="edu_dey_4">Diplomado en Regulación del Sistema Bancario</li>
+                                    <li data-i18n="edu_dey_5">Diplomado en Mediación y Conciliación (Idoneidad, 2024)</li>
                                 </ul>
                             </div>
                             <div>
-                                <span class="cred-label">ESPECIALIDADES</span>
+                                <span class="cred-label" data-i18n="label_specialties">ESPECIALIDADES</span>
                                 <div class="tags">
                                     <span>Administrativo</span><span>Agrario</span>
                                     <span>Migratorio</span><span>Contratación Pública</span><span>Mediación</span>
@@ -422,15 +417,15 @@
                     </div>
                     <div class="member-info">
                         <h3 class="member-name">OMAR ALBERTO JAÉN</h3>
-                        <span class="member-role">Abogado Penalista — Of Counsel</span>
+                        <span class="member-role" data-i18n="role_counsel">Abogado Penalista — Of Counsel</span>
                         <span class="sep-sm"></span>
-                        <p class="body-p">Especialista con más de diez (10) años de experiencia en materia penal,
+                        <p class="body-p" data-i18n="bio_omar">Especialista con más de diez (10) años de experiencia en materia penal,
                             incluyendo su trayectoria en el Ministerio Público como Fiscal Anticorrupción. Su profundo
                             conocimiento del sistema acusatorio penal panameño lo posiciona como un defensor de primer
                             nivel en casos de alta complejidad.</p>
                         <div class="member-credentials">
                             <div>
-                                <span class="cred-label">ESPECIALIDADES</span>
+                                <span class="cred-label" data-i18n="label_specialties">ESPECIALIDADES</span>
                                 <div class="tags">
                                     <span>Derecho Penal</span><span>Anticorrupción</span>
                                     <span>Sistema Acusatorio</span><span>Litigios Penales</span>
@@ -450,36 +445,36 @@
         <section id="testimonios" class="services-section-bg">
             <div class="section-wrap reveal">
                 <div style="text-align:center; margin-bottom:3rem;">
-                    <span class="tag">TESTIMONIOS</span>
-                    <h2 class="heading">LO QUE DICEN NUESTROS CLIENTES</h2>
+                    <span class="tag" data-i18n="tag_testimonials">TESTIMONIOS</span>
+                    <h2 class="heading" data-i18n="testimonials_heading">LO QUE DICEN NUESTROS CLIENTES</h2>
                     <span class="gold-sep center"></span>
                 </div>
                 <div class="testimonials-grid">
                     <div class="t-card">
                         <div class="t-quote-mark">"</div>
-                        <p class="t-text">ARCA LEGAL atendió mi proceso de sucesión, obteniendo el resultado deseado.</p>
+                        <p class="t-text" data-i18n="test_1_text">ARCA LEGAL atendió mi proceso de sucesión, obteniendo el resultado deseado.</p>
                         <div class="t-author">
                             <span class="t-name">Angela Bernal</span>
-                            <span class="t-role">Empresaria</span>
+                            <span class="t-role" data-i18n="test_1_role">Empresaria</span>
                         </div>
                     </div>
                     <div class="t-card">
                         <div class="t-quote-mark">"</div>
-                        <p class="t-text">Confié en ARCA LEGAL para la defensa de los intereses de nuestra empresa y los
+                        <p class="t-text" data-i18n="test_2_text">Confié en ARCA LEGAL para la defensa de los intereses de nuestra empresa y los
                             resultados fueron extraordinarios. Su dedicación y conocimiento jurídico son de primer
                             nivel.</p>
                         <div class="t-author">
                             <span class="t-name">Sergio Andrés Orrego</span>
-                            <span class="t-role">Director de Logística</span>
+                            <span class="t-role" data-i18n="test_2_role">Director de Logística</span>
                         </div>
                     </div>
                     <div class="t-card">
                         <div class="t-quote-mark">"</div>
-                        <p class="t-text">Como inversionista extranjero, necesitaba un despacho con experiencia
+                        <p class="t-text" data-i18n="test_3_text">Como inversionista extranjero, necesitaba un despacho con experiencia
                             internacional. ARCA LEGAL me brindó una asesoría impecable en cada etapa del proceso.</p>
                         <div class="t-author">
                             <span class="t-name">Joseph Maccio</span>
-                            <span class="t-role">Inversionista Internacional</span>
+                            <span class="t-role" data-i18n="test_3_role">Inversionista Internacional</span>
                         </div>
                     </div>
                 </div>
@@ -494,11 +489,11 @@
             <div class="section-wrap reveal">
                 <div class="contact-grid">
 
-                    <div>
-                        <span class="tag">CONTACTO</span>
-                        <h2 class="heading">INICIE SU CONSULTA</h2>
+                    <div class="contact-info">
+                        <span class="tag" data-i18n="tag_contact">CONTACTO</span>
+                        <h2 class="heading" data-i18n="contact_heading">INICIE SU CONSULTA</h2>
                         <span class="gold-sep"></span>
-                        <p class="body-p">Estamos listos para brindarle la asesoría legal que usted necesita. Complete
+                        <p class="body-p" data-i18n="contact_desc">Estamos listos para brindarle la asesoría legal que usted necesita. Complete
                             el formulario y un especialista le contactará a la brevedad.</p>
                         <div class="detail-group">
                             <div class="detail-item">
@@ -529,7 +524,10 @@
                                 </svg>
                                 <div>
                                     <span class="detail-label">TELÉFONO</span>
-                                    <p><a href="tel:+50769837069">+507 6983-7069</a></p>
+                                    <p>
+                                        <a href="tel:+50769837069">+507 6983-7069</a><br>
+                                        <a href="tel:+50762192299">+507 6219-2299</a>
+                                    </p>
                                 </div>
                             </div>
                             <div class="detail-item">
@@ -542,39 +540,45 @@
                                 <div>
                                     <span class="detail-label">EMAIL</span>
                                     <p>
-                                        <a href="mailto:aarias@arcalegal.com">aarias@arcalegal.com</a><br>
-                                        <a href="mailto:alejandroarias7@hotmail.com">alejandroarias7@hotmail.com</a>
+                                        <a href="mailto:aarias@arcalegalpanama.com">aarias@arcalegalpanama.com</a><br>
+                                        <a href="mailto:darcia@arcalegalpanama.com">darcia@arcalegalpanama.com</a><br>
+                                        <a href="mailto:abogados@arcalegalpanama.com">abogados@arcalegalpanama.com</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <form class="form" id="contactForm">
+                    <form class="form" id="contactForm" action="https://formsubmit.co/abogados@arcalegalpanama.com" method="POST">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="Nueva Consulta - ARCA LEGAL">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        
                         <div class="form-row col1">
-                            <input type="text" placeholder="Nombre completo" required>
+                            <input type="text" name="nombre" placeholder="Nombre completo" data-i18n="form_name" required>
                         </div>
                         <div class="form-row">
-                            <input type="email" placeholder="Correo electrónico" required>
-                            <input type="tel" placeholder="Teléfono">
+                            <input type="email" name="email" placeholder="Correo electrónico" data-i18n="form_email" required>
+                            <input type="tel" name="telefono" placeholder="Teléfono" data-i18n="form_phone">
                         </div>
                         <div class="form-row col1">
-                            <select required>
-                                <option value="">Área de interés legal</option>
-                                <option>Derecho Administrativo</option>
-                                <option>Derecho Penal</option>
-                                <option>Derecho Corporativo</option>
-                                <option>Derecho Inmobiliario</option>
-                                <option>Contratación Pública</option>
-                                <option>Derecho Migratorio</option>
-                                <option>Derecho Agrario</option>
-                                <option>Mediación y Conciliación</option>
-                                <option>Protección Patrimonial</option>
+                            <select name="interes" required>
+                                <option value="" disabled selected data-i18n="form_interest">Área de interés</option>
+                                <option value="Administrativo" data-i18n="svc_admin_title">DERECHO ADMINISTRATIVO</option>
+                                <option value="Penal" data-i18n="svc_penal_title">DERECHO PENAL</option>
+                                <option value="Corporativo" data-i18n="svc_corp_title">DERECHO CORPORATIVO</option>
+                                <option value="Civil" data-i18n="svc_civil_title">DERECHO CIVIL</option>
+                                <option value="Familia" data-i18n="svc_familia_title">DERECHO DE FAMILIA</option>
+                                <option value="Inmobiliario" data-i18n="svc_inmob_title">DERECHO INMOBILIARIO</option>
+                                <option value="Laboral" data-i18n="svc_laboral_title">DERECHO LABORAL</option>
+                                <option value="Migratorio" data-i18n="svc_migra_title">DERECHO MIGRATORIO</option>
+                                <option value="Proteccion" data-i18n="svc_protec_title">PROTECCIÓN PATRIMONIAL</option>
                             </select>
                         </div>
                         <div class="form-row col1">
-                            <textarea rows="6" placeholder="Describa brevemente su caso o consulta"></textarea>
+                            <textarea name="mensaje" placeholder="Describa su consulta..." data-i18n="form_msg" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-gold btn-full">ENVIAR CONSULTA</button>
+                        <button type="submit" class="btn btn-gold btn-full" data-i18n="form_submit">ENVIAR CONSULTA</button>
                     </form>
                 </div>
             </div>
